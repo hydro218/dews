@@ -47,7 +47,7 @@ function end(){
   const b = document.createElement("button");
   nh.textContent = "당황하지 않고, 침착해야 합니다";
   b.textContent = '처음 화면으로 돌아가기';
-  b.onclick = () => window.location.assign("https://hydro218.github.io/");
+  b.onclick = () => window.location.assign("../index.html");
   b.className += 'end';
   document.body.append(nh);
   document.body.append(b);
@@ -82,7 +82,7 @@ function choose(what) {
     case "2000":
         end();
         break;
-      default:
+    default:
       console.log(what + " did not work");
   }
 }

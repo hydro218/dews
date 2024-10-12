@@ -1,6 +1,6 @@
 .select {
   padding: 10px 20px;
-  background-color: #fe9090;
+  background-color: #B6C5D9;
   text-align: center;
   border-radius: 10px;
   font-size: 20px;
@@ -9,18 +9,18 @@
   color: #ffffff;
   font-weight: bold;
   display: inline-block;
-  transition: background-color 0.5s;
+  transition: background-color 1s;
   margin-right: 10px;
   margin-bottom: 5px;
 }
 
 .select:hover {
-  background-color: #ff1f1f;
+  background-color: #2A3C54;
 }
 
 .confirm {
   padding: 10px 20px;
-  background-color: #429eff;
+  background-color: #B6C5D9;
   text-align: center;
   border-radius: 10px;
   font-size: 20px;
@@ -35,7 +35,7 @@
 }
 
 .confirm:hover {
-  background-color: #0056b3;
+  background-color: #2A3C54;
 }
 
 .end {
@@ -54,6 +54,10 @@
   margin-bottom: 5px;
 }
 
+.end:hover{
+  background-color: #290008;
+}
+
 body {
   margin-left: 40px;
   margin-top: 20px;
@@ -64,8 +68,4 @@ body {
     font-weight: 400;
     font-style: normal;
   }
-}
-
-.end:hover{
-  background-color: #290008;
 }
