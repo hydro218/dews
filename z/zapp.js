@@ -47,7 +47,7 @@ function end() {
   const b = document.createElement("button");
   nh.textContent = "당황하지 않고, 침착해야 합니다";
   b.textContent = '처음 화면으로 돌아가기';
-  b.onclick = () => window.location.assign("https://ee4cafb7-3a9f-4d95-9ca7-68a9fb799c34-00-1oiywfz6nk0on.pike.replit.dev/");
+  b.onclick = () => window.location.assign("https://hydro218.github.io/");
   b.className += 'end';
   document.body.append(nh);
   document.body.append(b);
