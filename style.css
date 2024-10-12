@@ -1,0 +1,45 @@
+#help{
+  padding: 10px 20px;
+  background-color: #fe9090;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  border-style: hidden;
+  text-decoration-line: none;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 1s;
+  margin-bottom: 5px;
+}
+
+#help:hover {
+  background-color: #ff1f1f;
+}
+
+#logo{
+  height: auto;
+  width: 300px;
+}
+
+#detail{
+  color: #601212;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 5px;
+}
+
+#detailx{
+  color: #601212;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  margin: 5px;
+}
+
+body {
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: #ffebeb;
+}
