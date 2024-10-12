@@ -1,6 +1,6 @@
 #help{
   padding: 10px 20px;
-  background-color: #fe9090;
+  background-color: #B6C5D9;
   text-align: center;
   border-radius: 10px;
   font-size: 20px;
@@ -14,7 +14,7 @@
 }
 
 #help:hover {
-  background-color: #ff1f1f;
+  background-color: #2A3C54;
 }
 
 #logo{
@@ -24,7 +24,6 @@
 
 #detail{
   color: #601212;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 30px;
   margin: 5px;
@@ -32,7 +31,6 @@
 
 #detailx{
   color: #601212;
-  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 20px;
   margin: 5px;
@@ -41,7 +39,7 @@
 body {
   margin-left: 40px;
   margin-top: 20px;
-  background-color: #ffebeb;
+  background-color: #ffffff;
   @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
