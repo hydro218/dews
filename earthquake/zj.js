@@ -91,12 +91,12 @@ function build(x) {
       b1.id = 'remove1';
       b2.id = 'remove2';
       b1.onclick = function(){
-        del()
+        del();
         build(x+"1");
       };
       b2.onclick = function(){
-        del()
-        build(x+"2")
+        del();
+        build(x+"2");
       };
       document.body.append(h);
       document.body.append(b1);
@@ -111,7 +111,7 @@ function build(x) {
       b.id = 'remove';
       b.onclick = function(){
         document.getElementById("remove").remove();
-        build(x+"0")
+        build(x+"0");
       };
       document.body.append(h);
       document.body.append(b);
