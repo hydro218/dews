@@ -1,4 +1,24 @@
+/*
+guidelines
+
+key : 숫자로 이루어진 고유문자열, 안내사항 데이터에서 어떤 안내사항을 찾아 표시할지 결정하는 index역할
+
+sel : 2개의 선택지중 하나를 선택(t1 또는 t2)
+t1 선택시 key에 '1' append
+t2 선택시 key에 '2' append
+
+guide : 안내사항을 확인하고 '다음'을 선택
+'다음' 선택시 key에 '0' append
+
+head : 내용
+
+type : sel 또는 guide 선택
+
+"" : 첫번째 sel/guide
+*/
+
 const d = {
+  source: "za/",
   "": {
     head: "어디에 있나요?",
     type: "sel",

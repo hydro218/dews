@@ -44,7 +44,7 @@ function build(x) {
       };
       if (d[x].img != "none"){
         i = document.createElement("img");
-        i.src = 'za/'+d[x].img;
+        i.src = d.source+d[x].img;
         i.className += 'bimg';
         i.id = 'removei';
         document.body.append(i);
