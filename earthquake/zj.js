@@ -39,6 +39,7 @@ const d = {
   "1100000": {
     head: "급한 경사지를 피해 평탄한 곳으로 대피하세요",
     type: "guide",
+    img: "5.jpg"
   },
   "11000000": {
     type: "end",
@@ -46,22 +47,27 @@ const d = {
   "12": {
     head: "흔들림이 멈출 때까지 최대한 가만히 있으세요",
     type: "guide",
+    img: "none"
   },
   "120": {
     head: "가스와 전기를 차단하고 문을 열어 출구를 확보하세요",
     type: "guide",
+    img: "2.jpg"
   },
   "1200": {
     head: "밖으로 나갈 때는 신발을 신고 이동하세요",
     type: "guide",
+    img: "3.png"
   },
   "12000": {
     head: "계단을 이용하여 밖으로 대피하세요",
     type: "guide",
+    img: "4.png"
   },
   "120000": {
     head: "급한 경사지를 피해 평탄한 곳으로 대피하세요",
     type: "guide",
+    img: "5.jpg"
   },
   "1200000": {
     type: "end",
@@ -69,6 +75,7 @@ const d = {
   "2": {
     head: "급한 경사지를 피해 평탄한 곳으로 대피하세요",
     type: "guide",
+    img: "5.jpg"
   },
   "20": {
    type: "end",

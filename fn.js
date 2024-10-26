@@ -33,10 +33,8 @@ function build(x) {
     case "guide":
       h = document.createElement("h1");
       b = document.createElement("button");
-      i = document.createElement("img");
       h.textContent = d[x].head;
       b.textContent = '다음';
-      i.src = 'za/'+d[x].img;
       b.className += 'confirm';
       b.id = 'removeb';
       b.onclick = function(){
@@ -44,9 +42,13 @@ function build(x) {
         document.getElementById("removei").remove();
         build(x+"0");
       };
-      i.className += 'bimg';
-      i.id = 'removei';
-      document.body.append(i);
+      if (d[x].img != "none"){
+        i = document.createElement("img");
+        i.src = 'za/'+d[x].img;
+        i.className += 'bimg';
+        i.id = 'removei';
+        document.body.append(i);
+      }
       document.body.append(h);
       document.body.append(b);
       break;
