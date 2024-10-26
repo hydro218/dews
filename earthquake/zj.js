@@ -1,9 +1,3 @@
-function del(){
-  document.getElementById("removeh").remove();
-  document.getElementById("remove1").remove();
-  document.getElementById("remove2").remove();
-}
-
 const d = {
   "": {
     head: "어디에 있나요?",
@@ -20,6 +14,7 @@ const d = {
   "11": {
     head: "구조물 아래에 들어가 몸을 보호하세요",
     type: "guide",
+    img: "11.jpg",
   },
   "110": {
     head: "흔들림이 멈출 때까지 구조물을 잡고 버티세요",
@@ -76,6 +71,12 @@ const d = {
   },
 };
 
+function del(){
+  document.getElementById("removeh").remove();
+  document.getElementById("remove1").remove();
+  document.getElementById("remove2").remove();
+}
+
 function build(x) {
   switch (d[x].type) {
     case "sel":
@@ -105,14 +106,20 @@ function build(x) {
     case "guide":
       h = document.createElement("h1");
       b = document.createElement("button");
+      i = document.createElement("img");
       h.textContent = d[x].head;
       b.textContent = '다음';
+      i.src = 'za/'+d[x].img;
       b.className += 'confirm';
-      b.id = 'remove';
+      b.id = 'removeb';
       b.onclick = function(){
-        document.getElementById("remove").remove();
+        document.getElementById("removeb").remove();
+        document.getElementById("removei").remove();
         build(x+"0");
       };
+      i.className += 'bimg';
+      i.id = 'removei';
+      document.body.append(i);
       document.body.append(h);
       document.body.append(b);
       break;
