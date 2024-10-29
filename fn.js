@@ -39,7 +39,6 @@ function build(x) {
       b.id = 'removeb';
       b.onclick = function(){
         document.getElementById("removeb").remove();
-        document.getElementById("removei").remove();
         build(x+"0");
       };
       if (d[x].img != "none"){
@@ -48,6 +47,11 @@ function build(x) {
         i.className += 'bimg';
         i.id = 'removei';
         document.body.append(i);
+        b.onclick = function(){
+          document.getElementById("removeb").remove();
+          document.getElementById("removei").remove();
+          build(x+"0");
+        };
       }
       document.body.append(h);
       document.body.append(b);
@@ -55,10 +59,10 @@ function build(x) {
     case "end":
       h = document.createElement("h1");
       b = document.createElement("button");
-      h.textContent = "당황하지 않고, 침착해야 합니다";
-      b.textContent = '처음 화면으로 돌아가기';
+      h.textContent = d.end;
+      b.textContent = '대피소 찾기';
       b.onclick = function(){
-        window.location.assign("../index.html");
+        window.location.assign(d.link);
       }
       b.className += 'end';
       document.body.append(h);

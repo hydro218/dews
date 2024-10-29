@@ -1,70 +1,28 @@
-function del(){
-  document.getElementById("removeh").remove();
-  document.getElementById("remove1").remove();
-  document.getElementById("remove2").remove();
-}
+/*
+key : 숫자로 이루어진 고유문자열, 안내사항 데이터에서 어떤 안내사항을 찾아 표시할지 결정하는 index역할
 
-function build(x) {
-  switch (d[x].type) {
-    case "sel":
-      h = document.createElement("h1");
-      b1 = document.createElement("button");
-      b2 = document.createElement("button");
-      h.textContent = d[x].head;
-      b1.textContent = d[x].t1;
-      b2.textContent = d[x].t2;
-      b1.className += 'select';
-      b2.className += 'select';
-      h.id = 'removeh';
-      b1.id = 'remove1';
-      b2.id = 'remove2';
-      b1.onclick = function(){
-        del();
-        build(x+"1");
-      };
-      b2.onclick = function(){
-        del();
-        build(x+"2");
-      };
-      document.body.append(h);
-      document.body.append(b1);
-      document.body.append(b2);
-      break;
-    case "guide":
-      h = document.createElement("h1");
-      b = document.createElement("button");
-      i = document.createElement("img");
-      h.textContent = d[x].head;
-      b.textContent = '다음';
-      i.src = 'za/'+d[x].img;
-      b.className += 'confirm';
-      b.id = 'removeb';
-      b.onclick = function(){
-        document.getElementById("removeb").remove();
-        document.getElementById("removei").remove();
-        build(x+"0");
-      };
-      i.className += 'bimg';
-      i.id = 'removei';
-      document.body.append(i);
-      document.body.append(h);
-      document.body.append(b);
-      break;
-    case "end":
-      h = document.createElement("h1");
-      b = document.createElement("button");
-      h.textContent = "당황하지 않고, 침착해야 합니다";
-      b.textContent = '처음 화면으로 돌아가기';
-      b.onclick = function(){
-        window.location.assign("../index.html");
-      }
-      b.className += 'end';
-      document.body.append(h);
-      document.body.append(b);
-      break;
-  }
-}
+sel : 2개의 선택지중 하나를 선택(t1 또는 t2)
+t1에 해당하는 버튼 선택시 key에 '1' append
+t2에 해당하는 버튼 선택시 key에 '2' append
 
-window.onload = function() {
-  build("")
+guide : 안내사항을 확인하고 '다음'을 선택
+'다음' 선택시 key에 '0' append
+
+end : 안내 종료
+
+head : 내용
+
+type : sel 또는 guide 또는 end 선택
+
+img : 첨부 자료(없다면 none입력) 
+
+"" : 첫번째 sel/guide
+*/
+
+const d = {
+    source: "fa/",
+    "": {
+        head: "",
+        type: "",
+    },
 }
