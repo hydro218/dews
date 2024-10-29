@@ -41,7 +41,7 @@ function build(x) {
         document.getElementById("removeb").remove();
         build(x+"0");
       };
-      if (d[x].img != "none"){
+      if (d[x].img != "none") {
         i = document.createElement("img");
         i.src = d.source+d[x].img;
         i.className += 'bimg';
