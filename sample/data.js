@@ -19,11 +19,32 @@ img : 첨부 자료(없다면 none입력)
 "" : 첫번째 sel/guide
 */
 
+/*
+형식
+
+"key값": {
+        head: "이름",
+        type: "guide",
+        img: "none 또는 asset아래의 주소"
+},
+
+"key값": {
+        head: "이름",
+        type: "sel",
+        t1: "첫번째 선택지"
+        t2: "두번째 선택지"
+},
+
+"key값": {
+        type: "end",
+},
+*/
+
 const d = {
-    source: "ta/",
-    link: "",
-    end: "",
-    endb: "",
+    source: "assets/",
+    link: "end의 버튼에서 열릴 링크",
+    end: "end에서 표시될 메시지",
+    endb: "end의 버튼에서 표시될 메시지",
     "": {
         head: "",
         type: "",
