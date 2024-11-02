@@ -12,6 +12,7 @@
   display: inline-block;
   transition: background-color 1s;
   position: fixed;
+  margin: 0 auto;
   bottom: 10px;
 }
 
@@ -33,6 +34,7 @@
   display: inline-block;
   transition: background-color 1s;
   position: fixed;
+  margin: 0 auto;
   bottom: 70px;
 }
 
@@ -54,6 +56,7 @@
   display: inline-block;
   transition: background-color 0.5s;
   position: fixed;
+  margin: 0 auto;
   bottom: 10px;
 }
 
@@ -74,9 +77,8 @@
   font-weight: bold;
   display: inline-block;
   transition: background-color 0.5s;
-  margin-right: 10px;
-  margin-bottom: 5px;
   position: fixed;
+  margin: 0 auto;
   bottom: 10px;
 }
 
@@ -92,7 +94,7 @@
 }
 
 body {
-  margin-left: 20px;
+  margin: 20px;
   margin-top: 20px;
   background-color: #ffffff;
 }
@@ -102,13 +104,4 @@ body {
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-}
-
-div.fixed {
-  position: fixed;
-  top: 80px;
-  right: 0;
-  width: 200px;
-  height: 100px;
-  border: 3px solid #73AD21;
 }
