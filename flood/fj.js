@@ -1,7 +1,8 @@
 const d = {
     source: "fa/",
     end: "자동차를 운행하지 마세요",
-    link: "",
+    link: "https://www.youtube.com/watch?v=cOQEdUBpLjg",
+    endb: "홍수 대피 동영상 보기",
     "": {
         head: "어디에 있나요?",
         type: "sel",
