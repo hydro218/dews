@@ -22,7 +22,8 @@ img : 첨부 자료(없다면 none입력)
 const d = {
     source: "fa/",
     link: "https://www.youtube.com/watch?v=Q3xNFC82ZYw",
-    end: "필요시 소화기를 사용하세요",
+    end: "주변인에게 화재를 알리세요",
+    endb: "소화기 사용요령 보기",
     "": {
         head: "'불이야'라고 외치고 119에 신고하세요",
         type: "guide",

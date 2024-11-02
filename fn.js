@@ -60,7 +60,7 @@ function build(x) {
       h = document.createElement("h1");
       b = document.createElement("button");
       h.textContent = d.end;
-      b.textContent = '대피소 찾기';
+      b.textContent = d.endb;
       b.onclick = function(){
         window.location.assign(d.link);
       }

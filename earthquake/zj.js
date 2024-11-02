@@ -2,6 +2,7 @@ const d = {
   source: "za/",
   end: "당황하지 않고, 침착해야 합니다",
   link: "https://map.naver.com/p/search/%EC%A7%80%EC%A7%84%EC%98%A5%EC%99%B8%EB%8C%80%ED%94%BC%EC%9E%A5%EC%86%8C",
+  endb: "대피소 찾기",
   "": {
     head: "어디에 있나요?",
     type: "sel",
