@@ -13,8 +13,8 @@ function build(x) {
       h.textContent = d[x].head;
       b1.textContent = d[x].t1;
       b2.textContent = d[x].t2;
-      b1.className += 'select';
-      b2.className += 'select';
+      b1.className += 'select1';
+      b2.className += 'select2';
       h.id = 'removeh';
       b1.id = 'remove1';
       b2.id = 'remove2';

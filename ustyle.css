@@ -1,5 +1,6 @@
-.select {
+.select1 {
   padding: 10px 20px;
+  width: 90%;
   background-color: #B6C5D9;
   text-align: center;
   border-radius: 10px;
@@ -10,16 +11,38 @@
   font-weight: bold;
   display: inline-block;
   transition: background-color 1s;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  position: fixed;
+  bottom: 10px;
 }
 
-.select:hover {
+.select2:hover {
+  background-color: #2A3C54;
+}
+
+.select2 {
+  padding: 10px 20px;
+  width: 90%;
+  background-color: #B6C5D9;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  border-style: hidden;
+  text-decoration-line: none;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 1s;
+  position: fixed;
+  bottom: 70px;
+}
+
+.select1:hover {
   background-color: #2A3C54;
 }
 
 .confirm {
   padding: 10px 20px;
+  width: 90%;
   background-color: #B6C5D9;
   text-align: center;
   border-radius: 10px;
@@ -30,8 +53,8 @@
   font-weight: bold;
   display: inline-block;
   transition: background-color 0.5s;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  position: fixed;
+  bottom: 10px;
 }
 
 .confirm:hover {
@@ -40,6 +63,7 @@
 
 .end {
   padding: 10px 20px;
+  width: 90%;
   background-color: #ff2499;
   text-align: center;
   border-radius: 10px;
@@ -52,6 +76,8 @@
   transition: background-color 0.5s;
   margin-right: 10px;
   margin-bottom: 5px;
+  position: fixed;
+  bottom: 10px;
 }
 
 .end:hover{
@@ -66,7 +92,7 @@
 }
 
 body {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 20px;
   background-color: #ffffff;
 }
@@ -76,4 +102,13 @@ body {
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
+}
+
+div.fixed {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
 }
